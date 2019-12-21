@@ -3,7 +3,7 @@ import "./App.css";
 import "materialize-css/dist/css/materialize.min.css";
 import Home from "./components/StaticPage/Home/Home";
 import ApartmentView from "./components/ApartmentView/ApartmentView"
-
+import RoommatesView from "./components/RoomatesView/RoommatesView"
 import BusView from "./components/BusView/BusView"
 import { BrowserRouter, Switch, Route, withRouter } from "react-router-dom";
 class App extends React.Component {
@@ -27,6 +27,11 @@ class App extends React.Component {
 				<Route exact path="/bus">
 					<div className="App">
 						<BusView />
+					</div>
+				</Route>
+				<Route exact path="/roommates">
+					<div className="App">
+						<RoommatesView />
 					</div>
 				</Route>
 

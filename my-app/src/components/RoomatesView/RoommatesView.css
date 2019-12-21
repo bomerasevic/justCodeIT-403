@@ -1,6 +1,6 @@
-.header4 {
+.header3 {
     font-family: Roboto;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../../assets/images/apartments.jpeg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../../assets/images/roommates.jpeg");
 	background-size: cover;
     background-attachment: fixed;
     width:100vw;

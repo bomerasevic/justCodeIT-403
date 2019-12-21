@@ -28,9 +28,7 @@ class Navigation extends React.Component {
 		this.setState({ modalIsOpen: false });
 	}
 
-	handleClickApartments = () => {
-        this.props.history.push("/apartments");
-    };
+
 	render() {
 		return (
 			<div className="navbar-fixed">
@@ -40,26 +38,23 @@ class Navigation extends React.Component {
 						</a>
 						<a href="#" data-target="mobile-demo" className="sidenav-trigger button-collapse">
 							<i className="material-icons">
-								<img src={hamburger} />
+								<img className="mobileLogo" src={hamburger} />
 							</i>
 						</a>
                         
 						<ul className="right hide-on-med-and-down">
-                       <li> TRAŽIŠ: </li>
+                       
 							<li>
-								<a onClick={this.handleClickApartments}>STAN</a>
+								<a href="http://localhost:3000/roommates">TRAŽIM CIMERA</a>
+							</li>							
+							<li>
+								<a href="#">HRANU</a>
 							</li>
 							<li>
-								<a href="#services">PREVOZ</a>
-							</li>
-							<li>
-								<a href="#staff">HRANU</a>
-							</li>
-							<li>
-								<a href="#contact">ZABAVU</a>
+								<a href="#">ZABAVU</a>
 							</li>
                             <li>
-								<a href="#contact">SAVJETE</a>
+								<a href="#">SAVJETE</a>
 							</li>
 							<li>
 								<a className=" btn login-static modal-trigger" onClick={this.openModal}>

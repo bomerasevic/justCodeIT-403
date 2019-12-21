@@ -92,6 +92,9 @@ margin:0;
 #time-keeper-logo{
     margin:0;
 }
+.mobileLogo{
+    width:20px;
+}
 
 .row,
 #margin-group {

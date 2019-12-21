@@ -35,19 +35,22 @@ class MobileNavigation extends Component {
             <ul className="sidenav" id="mobile-demo">
                 <p>TRAŽIŠ</p>
                 <li>
-                    <a href="#about">stan</a>
+                    <a href="http://localhost:3000/apartments">STAN</a>
                 </li>
                 <li>
-                    <a href="#services">prevoz</a>
+                    <a href="http://localhost:3000/bus">PREVOZ</a>
                 </li>
                 <li>
-                    <a href="#staff">hranu</a>
+                    <a href="#services">GRADSKI PREVOZ</a>
                 </li>
                 <li>
-                    <a href="#contact">zabavu</a>
+                    <a href="#staff">HRANU</a>
                 </li>
                 <li>
-                    <a href="#contact">savjete</a>
+                    <a href="#contact">ZABAVU</a>
+                </li>
+                <li>
+                    <a href="#contact">SAVJETE</a>
                 </li>
 
                 <li>
@@ -67,7 +70,7 @@ class MobileNavigation extends Component {
                                 }}
                                 validationSchema={SignupSchema}
                                 onSubmit={(values, { setSubmitting }) => {
-                                   
+
                                 }}
                             >
                             </Formik>

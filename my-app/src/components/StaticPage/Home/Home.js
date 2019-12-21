@@ -10,12 +10,12 @@ function Home() {
             <Navigation />
             <MobileNavigation />
             <div className="container header-text">
-                <h1>StuDingo</h1>
+                <h1>Study'n'Go</h1>
                 <h2>
                     Vodič za studente
 				</h2>
-                <a className="btn btn-full" href="#" >Nađi novi DOM</a>
-                <a className="btn btn-full" href="#" >Vrati me KUĆI</a>
+                <a className="btn btn-full" href="http://localhost:3000/apartments" >Nađi novi DOM</a>
+                <a className="btn btn-full" href="http://localhost:3000/bus" >Vrati me KUĆI</a>
             </div>
         </div>
     );
