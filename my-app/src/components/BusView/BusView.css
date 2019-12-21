@@ -1,0 +1,15 @@
+.header2 {
+    font-family: Roboto;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../../assets/images/bus.jpeg");
+	background-size: cover;
+    background-attachment: fixed;
+    width:100vw;
+	min-height: 50vh;
+};
+.dropDown{
+    color:white;
+    width:100px;
+}
+h1{
+    color:white;
+}

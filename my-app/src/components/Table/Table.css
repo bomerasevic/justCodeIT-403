@@ -1,0 +1,13 @@
+.table-tk-row-dark{
+    background-color: var(--dark);
+}
+.table-tk-row-dark th{
+    color: var(--light);
+    text-transform: capitalize;
+}
+.table-tk th, .table-tk td{
+    text-align: right;
+}
+.table-tk th:first-child, .table-tk td:first-child{
+    text-align: left;
+}

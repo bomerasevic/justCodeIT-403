@@ -1,0 +1,13 @@
+.crud-top {
+  padding-top: 2rem;
+  text-align: center;
+  height: 20rem;
+  background-position: top;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  color: var(--light);
+}
+.crud-table {
+  margin-top: -8rem;
+}

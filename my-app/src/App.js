@@ -2,10 +2,15 @@ import React, { Component } from "react";
 import "./App.css";
 import "materialize-css/dist/css/materialize.min.css";
 import Home from "./components/StaticPage/Home/Home";
+import ApartmentView from "./components/ApartmentView/ApartmentView"
 
+import BusView from "./components/BusView/BusView"
 import { BrowserRouter, Switch, Route, withRouter } from "react-router-dom";
 class App extends React.Component {
-	
+	componentDidMount(){
+		
+		const { history } = this.props;
+	}
 	render() {
 		return (
 			<Switch>
@@ -14,6 +19,17 @@ class App extends React.Component {
 						<Home />
 					</div>
 				</Route>
+				<Route exact path="/apartments">
+					<div className="App">
+						<ApartmentView />
+					</div>
+				</Route>
+				<Route exact path="/bus">
+					<div className="App">
+						<BusView />
+					</div>
+				</Route>
+
 
 			</Switch>
 		);

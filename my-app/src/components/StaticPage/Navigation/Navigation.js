@@ -5,6 +5,8 @@ import logomodal from "../../../assets/images/logomodal.png";
 import hamburger from "../../../assets/images/hamburger.svg";
 import Modal from "react-modal";
 import * as Yup from "yup";
+
+import { withRouter } from "react-router-dom";
 import { Formik, Form, Field } from "formik";
 const SignupSchema = Yup.object().shape({
 	username: Yup.string().min(5, "Too Short!").required("Required"),
@@ -25,6 +27,10 @@ class Navigation extends React.Component {
 	closeModal() {
 		this.setState({ modalIsOpen: false });
 	}
+
+	handleClickApartments = () => {
+        this.props.history.push("/apartments");
+    };
 	render() {
 		return (
 			<div className="navbar-fixed">
@@ -37,22 +43,23 @@ class Navigation extends React.Component {
 								<img src={hamburger} />
 							</i>
 						</a>
-                        <a>TRAŽIŠ: </a>
+                        
 						<ul className="right hide-on-med-and-down">
+                       <li> TRAŽIŠ: </li>
 							<li>
-								<a href="#about">stan</a>
+								<a onClick={this.handleClickApartments}>STAN</a>
 							</li>
 							<li>
-								<a href="#services">prevoz</a>
+								<a href="#services">PREVOZ</a>
 							</li>
 							<li>
-								<a href="#staff">hranu</a>
+								<a href="#staff">HRANU</a>
 							</li>
 							<li>
-								<a href="#contact">zabavu</a>
+								<a href="#contact">ZABAVU</a>
 							</li>
                             <li>
-								<a href="#contact">savjete</a>
+								<a href="#contact">SAVJETE</a>
 							</li>
 							<li>
 								<a className=" btn login-static modal-trigger" onClick={this.openModal}>
