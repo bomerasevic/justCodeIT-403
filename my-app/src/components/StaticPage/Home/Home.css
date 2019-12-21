@@ -1,0 +1,68 @@
+  
+.header nav img {
+	height: 44px;
+	width: auto;
+	margin-top: 11px;
+}
+.header {
+	font-family: Roboto;
+	background-image: url("../../../assets/images/backgroundStation.jfif");
+    background-attachment: fixed;
+    
+	background-size: cover;
+	min-height: 98vh;
+	height: auto;
+}
+.header .container {
+	text-align: center;
+	color: white;
+	padding-top: 200px;
+}
+
+.header .container h1 {
+	font-size: 96px;
+
+	font-weight: 400;
+}
+.header .container h2 {
+	font-size: 30px;
+	font-weight: 100;
+}
+.header .container h6 {
+	font-weight: 500;
+	margin-top: 30px;
+}
+@media screen and (max-width: 600px) {
+	.header .container h1 {
+		font-size: 48px;
+	}
+
+	.header .container h2 {
+		font-size: 24px;
+	}
+
+	.header-text br {
+		display: none;
+	}
+
+	.header {
+		min-height: 60vh;
+		height: auto;
+	}
+
+	.header .container {
+		padding: 0;
+	}
+	.header .header-text .logo-large {
+		display: block;
+		width: 30%;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+}
+@media screen and (min-width: 600px) {
+	.header .header-text .logo-large {
+		display: none;
+	}
+}
+
