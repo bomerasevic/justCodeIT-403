@@ -155,6 +155,7 @@ class ApartmentView extends Component {
 							variant="outlined"
 							id="grad"
 							width="100px"
+							color="black"
 							select
 							label="Odaberi lokaciju"
 							value={this.selectedLocation}

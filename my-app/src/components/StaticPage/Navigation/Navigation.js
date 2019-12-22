@@ -8,6 +8,8 @@ import * as Yup from "yup";
 import logo from "../../../assets/images/logo.png"
 import { withRouter } from "react-router-dom";
 import { Formik, Form, Field } from "formik";
+import config from "../../../config";
+import axios from "axios";
 const SignupSchema = Yup.object().shape({
 	username: Yup.string().min(5, "Too Short!").required("Required"),
 	password: Yup.string().required("Required")
@@ -71,9 +73,25 @@ class Navigation extends React.Component {
 												password: ""
 											}}
 											validationSchema={SignupSchema}
-											onSubmit={(values) => {
-												this.props.auth(values)
-											}}
+											onSubmit={(values, { setSubmitting }) => {
+                                                axios
+                                                    .post(`${config.apiUrl}users`, values, {
+                                                        headers: {
+                                                            "Access-Control-Allow-Origin": "*",
+                                                            "Content-Type": "application/json"
+                                                        }
+                                                    })
+                                                    .then(resp => {
+
+                                                        console.log(resp.data);
+                                                        config.token = "Baerer " + resp.data.base64;
+                                                        console.log(config);
+                                                    })
+                                                    .catch(err => {
+                                                        console.log(err);
+                                                        
+                                                    });
+                                            }}
 										>
 											{({ errors, touched }) => (
 												<Form>
@@ -92,17 +110,11 @@ class Navigation extends React.Component {
 														) : null}
 														<label htmlFor="password">password</label>
 													</div>
+														<p>Imaš stan, a nemaš cimera?</p>
 													<div id="loginbtn">
-														<button type="submit" className=" btn Login-static "
+														<button type="submit" href="http://localhost:3000/welcome" className=" btn Login-static "
 														>
 															LOGIN
-														</button>
-													</div>
-													<div id="loginbtn">
-														<p>Izdaješ stan, nemaš account?</p>
-														<button className=" btn Login-static "
-														>
-															REGISTRIRAJ SE
 														</button>
 													</div>
 												</Form>

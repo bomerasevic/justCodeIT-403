@@ -5,6 +5,7 @@ import Home from "./components/StaticPage/Home/Home";
 import ApartmentView from "./components/ApartmentView/ApartmentView"
 import RoommatesView from "./components/RoomatesView/RoommatesView"
 import BusView from "./components/BusView/BusView"
+import Welcome from "./components/Welcome/Welcome"
 import { BrowserRouter, Switch, Route, withRouter } from "react-router-dom";
 class App extends React.Component {
 	componentDidMount(){
@@ -32,6 +33,11 @@ class App extends React.Component {
 				<Route exact path="/roommates">
 					<div className="App">
 						<RoommatesView />
+					</div>
+				</Route>
+				<Route exact path="/welcome">
+					<div className="App">
+						<Welcome />
 					</div>
 				</Route>
 

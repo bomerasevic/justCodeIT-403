@@ -14,28 +14,24 @@ class Menu extends Component {
 
     render() {
         return (
-            <p>TRAŽIŠ</p>
             <ul>
-            <li>
-                <a href="#about">stan</a>
-            </li>
-            <li>
-                <a href="#services">prevoz</a>
-            </li>
-            <li>
-                <a href="#staff">hranu</a>
-            </li>
-            <li>
-                <a href="#contact">zabavu</a>
-            </li>
-            <li>
-                <a href="#contact">savjete</a>
-            </li>
-            <li>
-                <a className="waves-effect waves-light btn">Login</a>
-            </li>
-    </ul >
-      );
+                <li>
+                    <a href="http://localhost:3000/roommates">TRAŽIM CIMERA</a>
+                </li>
+                <li>
+                    <a href="#">HRANU</a>
+                </li>
+                <li>
+                    <a href="#">ZABAVU</a>
+                </li>
+                <li>
+                    <a href="#">SAVJETE</a>
+                </li>
+                <li>
+                    <a className="waves-effect waves-light btn">Login</a>
+                </li>
+            </ul >
+        );
     }
 }
 

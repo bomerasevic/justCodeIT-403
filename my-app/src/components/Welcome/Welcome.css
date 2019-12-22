@@ -1,0 +1,78 @@
+  
+.header-welcome nav img {
+    height: 40px;
+    width: auto;
+}
+.header-welcome {
+    font-family: Roboto;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("../../assets/images/loggedin_header.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    height: auto;
+}
+.header-welcome .container {
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+}
+
+.header-welcome .container h1 {
+    font-size: 86px;
+    margin-top: 0px;
+    font-weight: 300;
+}
+.header-welcome .container h2 {
+    font-size: 30px;
+    font-weight: 100;
+}
+.header-welcome .container h6 {
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.logo-large{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 110px;
+    height: auto;
+}
+@media screen and (max-width: 600px) {
+    .header-welcome .container h1 {
+        font-size: 48px;
+        margin-top: 30px;
+    }
+
+    .header-welcome .container h2 {
+        font-size: 24px;
+    }
+
+    .header-welcome-text br {
+        display: none;
+    }
+
+    .header-welcome {
+        height: 100vh;
+
+    }
+    h1{
+        
+        margin-top: 50px;
+    }
+
+    .header-welcome .container {
+        padding: 0;
+    }
+    .header-welcome .header-welcome-text .logo-large {
+        display: block;
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 0px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .header-welcome .header-welcome-text .logo-large {
+        display: none;
+    }
+
+}

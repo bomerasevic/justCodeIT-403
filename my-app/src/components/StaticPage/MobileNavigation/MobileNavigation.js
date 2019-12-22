@@ -33,24 +33,17 @@ class MobileNavigation extends Component {
     render() {
         return (
             <ul className="sidenav" id="mobile-demo">
-                <p>TRAŽIŠ</p>
                 <li>
-                    <a href="http://localhost:3000/apartments">STAN</a>
+                    <a href="http://localhost:3000/roommates">TRAŽIM CIMERA</a>
                 </li>
                 <li>
-                    <a href="http://localhost:3000/bus">PREVOZ</a>
+                    <a href="#">HRANU</a>
                 </li>
                 <li>
-                    <a href="#services">GRADSKI PREVOZ</a>
+                    <a href="#">ZABAVU</a>
                 </li>
                 <li>
-                    <a href="#staff">HRANU</a>
-                </li>
-                <li>
-                    <a href="#contact">ZABAVU</a>
-                </li>
-                <li>
-                    <a href="#contact">SAVJETE</a>
+                    <a href="#">SAVJETE</a>
                 </li>
 
                 <li>
