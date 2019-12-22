@@ -11,6 +11,8 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import TableSortLabel from "@material-ui/core/TableSortLabel";
 import axios from "axios";
+
+import Modal from "react-modal";
 let counter = 0;
 function createData(
 	address,
@@ -40,9 +42,7 @@ const rows = [
 class ApartmentView extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			modalIsOpen: false
-		};
+		
 		this.openModal = this.openModal.bind(this);
 		this.closeModal = this.closeModal.bind(this);
 	}
@@ -55,6 +55,7 @@ class ApartmentView extends Component {
 
 	state = {
 		selected: [],
+		modalIsOpen: false,
 		data: [],
 		selectedLocation: null,
 		inputValue: null,
@@ -72,8 +73,6 @@ class ApartmentView extends Component {
 		});
 	};
 	componentDidMount() {
-		/*     this.setState({ loading: true });
-		 */
 
 		if (
 			this.state.selectedLocation == null &&
@@ -209,7 +208,10 @@ class ApartmentView extends Component {
                           return (
                             <TableRow
                               hover                              
-                              key={n.id}
+							  key={n.id}
+							  onClick={this.openModal}
+
+							  
                             >
                               <TableCell component="th" scope="row">
                                 {n.address}
@@ -219,45 +221,27 @@ class ApartmentView extends Component {
                               <TableCell>{n.price}</TableCell>
                               <TableCell>{n.numberOfRooms}</TableCell>
                               <TableCell>{n.flat}</TableCell>
-							  <Modal isOpen={this.state.modalIsOpen} onRequestClose={this.closeModal}>
-									<div className="row">		
-
-										<h1 className="loginHeader1">Login to your account</h1>
-
-										<h2 className="loginHeader2">Save time for doing great work.</h2>
-										<a href="#" class="close" onClick={this.closeModal} />
-										<Formik
-											initialValues={{
-												username: "",
-												password: ""
-											}}
-										>
-											{({ errors, touched }) => (
-												<Form>
-													<div className="input-field">
-														<Field name="username" id="username" type="text" />														
-														<label htmlFor="username">username</label>
-													</div>
-
-													<div className="input-field">
-														<Field name="password" id="password" type="password" />
-														{errors.password && touched.password ? (
-															<div className="errorPasswordRed">{errors.password}</div>
-														) : null}
-														<label htmlFor="password">password</label>
-													</div>
-													
-												</Form>
-											)}
-										</Formik>
-									</div>
-								</Modal>
+							 
 
                             </TableRow>
                           );
                         })}
                     </TableBody>
                   </Table>
+				   <Modal isOpen={this.state.modalIsOpen} onRequestClose={this.closeModal}>
+									<div className="row">	
+										<a href="#" class="close" onClick={this.closeModal} />
+										<h2>IZDAJEM</h2>
+										<h6>Adresa: Dzemala Bijedica 129</h6>
+										<h6>Opis: Uredan stan</h6>
+										<h6>Cijena: 350.0</h6>
+										<h6>Broj soba: 2</h6>
+										<h6>Površina: 40 m2</h6>										
+										<h6>Nova gradnja: Da</h6>										
+										<h6>Datum objave oglasa: 27.11.2019.</h6>
+									</div>
+								</Modal>
+					
                 
 				</div>
 

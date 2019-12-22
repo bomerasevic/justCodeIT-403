@@ -5,7 +5,7 @@ import logomodal from "../../../assets/images/logomodal.png";
 import hamburger from "../../../assets/images/hamburger.svg";
 import Modal from "react-modal";
 import * as Yup from "yup";
-
+import logo from "../../../assets/images/logo.png"
 import { withRouter } from "react-router-dom";
 import { Formik, Form, Field } from "formik";
 const SignupSchema = Yup.object().shape({
@@ -34,7 +34,8 @@ class Navigation extends React.Component {
 			<div className="navbar-fixed">
 				<nav className="custom-navbar ">
 					<div className="nav-wrapper">
-						<a href="#home" className="left brand-logo">
+						<a href="http://localhost:3000/" className="left brand-logo">
+						<img id=" time-keeper-logo" src={logo} />
 						</a>
 						<a href="#" data-target="mobile-demo" className="sidenav-trigger button-collapse">
 							<i className="material-icons">
