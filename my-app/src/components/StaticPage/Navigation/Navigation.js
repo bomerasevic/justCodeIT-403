@@ -35,7 +35,7 @@ class Navigation extends React.Component {
 				<nav className="custom-navbar ">
 					<div className="nav-wrapper">
 						<a href="http://localhost:3000/" className="left brand-logo">
-						<img id=" time-keeper-logo" src={logo} />
+						<img className="logo-main" id=" time-keeper-logo" src={logo} />
 						</a>
 						<a href="#" data-target="mobile-demo" className="sidenav-trigger button-collapse">
 							<i className="material-icons">
@@ -63,11 +63,7 @@ class Navigation extends React.Component {
 								</a>
 								<Modal isOpen={this.state.modalIsOpen} onRequestClose={this.closeModal}>
 									<div className="row">
-										<img className="logo-modal" src={logomodal} />
-
-										<h1 className="loginHeader1">Login to your account</h1>
-
-										<h2 className="loginHeader2">Save time for doing great work.</h2>
+										<img className="logo-modal" src={logo} />
 										<a href="#" class="close" onClick={this.closeModal} />
 										<Formik
 											initialValues={{
@@ -100,6 +96,13 @@ class Navigation extends React.Component {
 														<button type="submit" className=" btn Login-static "
 														>
 															LOGIN
+														</button>
+													</div>
+													<div id="loginbtn">
+														<p>Izdaješ stan, nemaš account?</p>
+														<button className=" btn Login-static "
+														>
+															REGISTRIRAJ SE
 														</button>
 													</div>
 												</Form>

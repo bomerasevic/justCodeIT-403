@@ -3,11 +3,17 @@
         position: absolute;
     }
     #time-keeper-logo {
+        display: none !important;
+    }
+    .brand-logo{
         display: none;
     }
     #mobile-demo {
         margin-left: 0px;
         padding-left: 0px;
+    }
+    .logo-main{
+        display: none;
     }
     .custom-navbar {
         padding: 0 1em !important;
@@ -55,9 +61,12 @@ nav .brand-logo {
 
 #time-keeper-logo{
 margin:0;
-width:30px;
-}
 
+}
+.logo-main{
+    margin-top: 5px;
+    height: 50px !important;
+}
 .ReactModal__Overlay--after-open {
     z-index: 1000;
     background-color: rgba(128, 128, 128, 0.397) !important;
@@ -90,10 +99,6 @@ width:30px;
     text-align: center;
 }
 
-#time-keeper-logo{
-    margin:0;
-    width:30px;
-}
 .mobileLogo{
     width:20px;
 }
