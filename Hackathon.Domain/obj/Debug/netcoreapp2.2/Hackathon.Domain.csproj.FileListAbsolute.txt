@@ -9,3 +9,14 @@ C:\Hackathon\Hackathon\Hackathon.Domain\bin\Debug\netcoreapp2.2\Hackathon.Domain
 C:\Hackathon\Hackathon\Hackathon.Domain\bin\Debug\netcoreapp2.2\Hackathon.Domain.pdb
 C:\Hackathon\Hackathon\Hackathon.Domain\obj\Debug\netcoreapp2.2\Hackathon.Domain.dll
 C:\Hackathon\Hackathon\Hackathon.Domain\obj\Debug\netcoreapp2.2\Hackathon.Domain.pdb
+C:\Users\mersihace\Hackathon\Hackathon.Domain\bin\Debug\netcoreapp2.2\Hackathon.Domain.deps.json
+C:\Users\mersihace\Hackathon\Hackathon.Domain\bin\Debug\netcoreapp2.2\Hackathon.Domain.runtimeconfig.json
+C:\Users\mersihace\Hackathon\Hackathon.Domain\bin\Debug\netcoreapp2.2\Hackathon.Domain.runtimeconfig.dev.json
+C:\Users\mersihace\Hackathon\Hackathon.Domain\bin\Debug\netcoreapp2.2\Hackathon.Domain.dll
+C:\Users\mersihace\Hackathon\Hackathon.Domain\bin\Debug\netcoreapp2.2\Hackathon.Domain.pdb
+C:\Users\mersihace\Hackathon\Hackathon.Domain\obj\Debug\netcoreapp2.2\Hackathon.Domain.csprojAssemblyReference.cache
+C:\Users\mersihace\Hackathon\Hackathon.Domain\obj\Debug\netcoreapp2.2\Hackathon.Domain.csproj.CoreCompileInputs.cache
+C:\Users\mersihace\Hackathon\Hackathon.Domain\obj\Debug\netcoreapp2.2\Hackathon.Domain.AssemblyInfoInputs.cache
+C:\Users\mersihace\Hackathon\Hackathon.Domain\obj\Debug\netcoreapp2.2\Hackathon.Domain.AssemblyInfo.cs
+C:\Users\mersihace\Hackathon\Hackathon.Domain\obj\Debug\netcoreapp2.2\Hackathon.Domain.dll
+C:\Users\mersihace\Hackathon\Hackathon.Domain\obj\Debug\netcoreapp2.2\Hackathon.Domain.pdb

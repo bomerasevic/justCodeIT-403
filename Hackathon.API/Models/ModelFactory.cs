@@ -18,7 +18,8 @@ namespace Hackathon.API.Models
                 FullName = r.FullName,
                 Phone = r.Phone,
                 Email = r.Email,
-                Faculty = r.Faculty
+                Faculty = r.Faculty,
+                Address = r.Address
             };
         }
         public ApartmentModel Create(Apartment a)
@@ -40,6 +41,22 @@ namespace Hackathon.API.Models
                 DateOfRenewal = a.DateOfRenewal,
                 DateOfPublication = a.DateOfPublication,
                 Location = new MasterModel { Id = a.Location.Id, Name = a.Location.Name}
+            };
+        }
+        public TransportModel Create(Transport t)
+        {
+            return new TransportModel
+            {
+                Id = t.Id,
+                FromLocation = new MasterModel { Id = t.FromLocation.Id, Name = t.FromLocation.Name },
+                ToLocation = new MasterModel { Id = t.ToLocation.Id, Name = t.ToLocation.Name },
+                TimeOfDeparture = t.TimeOfDeparture,
+                TimeOfArrival = t.TimeOfArrival,
+                Distance = t.Distance,
+                Line = t.Line,
+                Price = t.Price,
+                Duration = t.Duration,
+                Company = t.Company
             };
         }
     }

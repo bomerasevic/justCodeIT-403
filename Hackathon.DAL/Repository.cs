@@ -27,5 +27,6 @@ namespace Hackathon.DAL
 
             return entity;
         }
+        public virtual void Insert(Entity entity) => _dbSet.Add(entity);
     }
 }

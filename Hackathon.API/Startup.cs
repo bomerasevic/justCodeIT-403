@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Hackathon.API.Services;
 using Hackathon.DAL;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -37,6 +39,14 @@ namespace Hackathon.API
 
             string connectionString = "User ID=postgres; Password=admin; Server=localhost; Port=5432; Database=hackathon; Integrated Security=true; Pooling=true;";
             services.AddDbContext<HackathonContext>(o => { o.UseNpgsql(connectionString); });
+
+            services.AddAuthentication("BasicAuthentication")
+                    .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
+
+            services.Configure<IISOptions>(o =>
+            {
+                o.AutomaticAuthentication = false;  // vezana za windows; ne koristi se windows autentikacija/niti od internet information servera
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
