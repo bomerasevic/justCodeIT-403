@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Hackathon\\Hackathon\\Hackathon.API\\Hackathon.API.csproj": {}
+    "C:\\Users\\mersihace\\Hackathon\\Hackathon.API\\Hackathon.API.csproj": {}
   },
   "projects": {
-    "C:\\Hackathon\\Hackathon\\Hackathon.API\\Hackathon.API.csproj": {
+    "C:\\Users\\mersihace\\Hackathon\\Hackathon.API\\Hackathon.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Hackathon\\Hackathon\\Hackathon.API\\Hackathon.API.csproj",
+        "projectUniqueName": "C:\\Users\\mersihace\\Hackathon\\Hackathon.API\\Hackathon.API.csproj",
         "projectName": "Hackathon.API",
-        "projectPath": "C:\\Hackathon\\Hackathon\\Hackathon.API\\Hackathon.API.csproj",
+        "projectPath": "C:\\Users\\mersihace\\Hackathon\\Hackathon.API\\Hackathon.API.csproj",
         "packagesPath": "C:\\Users\\mersihace\\.nuget\\packages\\",
-        "outputPath": "C:\\Hackathon\\Hackathon\\Hackathon.API\\obj\\",
+        "outputPath": "C:\\Users\\mersihace\\Hackathon\\Hackathon.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,11 +32,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Hackathon\\Hackathon\\Hackathon.DAL\\Hackathon.DAL.csproj": {
-                "projectPath": "C:\\Hackathon\\Hackathon\\Hackathon.DAL\\Hackathon.DAL.csproj"
+              "C:\\Users\\mersihace\\Hackathon\\Hackathon.DAL\\Hackathon.DAL.csproj": {
+                "projectPath": "C:\\Users\\mersihace\\Hackathon\\Hackathon.DAL\\Hackathon.DAL.csproj"
               },
-              "C:\\Hackathon\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj": {
-                "projectPath": "C:\\Hackathon\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj"
+              "C:\\Users\\mersihace\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj": {
+                "projectPath": "C:\\Users\\mersihace\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Hackathon\\Hackathon\\Hackathon.DAL\\Hackathon.DAL.csproj": {
+    "C:\\Users\\mersihace\\Hackathon\\Hackathon.DAL\\Hackathon.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Hackathon\\Hackathon\\Hackathon.DAL\\Hackathon.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\mersihace\\Hackathon\\Hackathon.DAL\\Hackathon.DAL.csproj",
         "projectName": "Hackathon.DAL",
-        "projectPath": "C:\\Hackathon\\Hackathon\\Hackathon.DAL\\Hackathon.DAL.csproj",
+        "projectPath": "C:\\Users\\mersihace\\Hackathon\\Hackathon.DAL\\Hackathon.DAL.csproj",
         "packagesPath": "C:\\Users\\mersihace\\.nuget\\packages\\",
-        "outputPath": "C:\\Hackathon\\Hackathon\\Hackathon.DAL\\obj\\",
+        "outputPath": "C:\\Users\\mersihace\\Hackathon\\Hackathon.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -116,8 +116,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Hackathon\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj": {
-                "projectPath": "C:\\Hackathon\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj"
+              "C:\\Users\\mersihace\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj": {
+                "projectPath": "C:\\Users\\mersihace\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj"
               }
             }
           }
@@ -168,14 +168,14 @@
         }
       }
     },
-    "C:\\Hackathon\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj": {
+    "C:\\Users\\mersihace\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Hackathon\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\mersihace\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj",
         "projectName": "Hackathon.Domain",
-        "projectPath": "C:\\Hackathon\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj",
+        "projectPath": "C:\\Users\\mersihace\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj",
         "packagesPath": "C:\\Users\\mersihace\\.nuget\\packages\\",
-        "outputPath": "C:\\Hackathon\\Hackathon\\Hackathon.Domain\\obj\\",
+        "outputPath": "C:\\Users\\mersihace\\Hackathon\\Hackathon.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

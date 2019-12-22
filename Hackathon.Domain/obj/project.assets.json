@@ -3302,11 +3302,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Hackathon\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\mersihace\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj",
       "projectName": "Hackathon.Domain",
-      "projectPath": "C:\\Hackathon\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj",
+      "projectPath": "C:\\Users\\mersihace\\Hackathon\\Hackathon.Domain\\Hackathon.Domain.csproj",
       "packagesPath": "C:\\Users\\mersihace\\.nuget\\packages\\",
-      "outputPath": "C:\\Hackathon\\Hackathon\\Hackathon.Domain\\obj\\",
+      "outputPath": "C:\\Users\\mersihace\\Hackathon\\Hackathon.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -29,7 +29,6 @@ namespace Hackathon.API.Controllers
         [ProducesResponseType(400)]
         public IActionResult Get(int id)
         {
-            //Log.Info($"Try to get Day with {id} ");
             Roommate r = Unit.Roommates.Get(id);
             if (r == null)
             {

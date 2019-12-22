@@ -10,5 +10,6 @@ namespace Hackathon.DAL
         IQueryable<Entity> Get();
         IList<Entity> Get(Func<Entity, bool> where);
         Entity Get(int id);
+        void Insert(Entity entity);
     }
 }

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -38,35 +37,12 @@ namespace Hackathon.DAL.Migrations
                     LastName = table.Column<string>(nullable: true),
                     Phone = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true),
-                    Faculty = table.Column<string>(nullable: true)
+                    Faculty = table.Column<string>(nullable: true),
+                    Address = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Roommates", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Transports",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
-                    Created = table.Column<DateTime>(nullable: false),
-                    Creator = table.Column<int>(nullable: false),
-                    Deleted = table.Column<bool>(nullable: false),
-                    FromLocation = table.Column<List<string>>(nullable: true),
-                    ToLocation = table.Column<List<string>>(nullable: true),
-                    Time_of_Departure = table.Column<string>(nullable: true),
-                    Time_of_Arrival = table.Column<string>(nullable: true),
-                    Line = table.Column<string>(nullable: true),
-                    Distance = table.Column<string>(nullable: true),
-                    Price = table.Column<decimal>(nullable: false),
-                    Duration = table.Column<decimal>(nullable: false),
-                    Company = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Transports", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -124,10 +100,56 @@ namespace Hackathon.DAL.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Transports",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
+                    Created = table.Column<DateTime>(nullable: false),
+                    Creator = table.Column<int>(nullable: false),
+                    Deleted = table.Column<bool>(nullable: false),
+                    FromLocationId = table.Column<int>(nullable: true),
+                    ToLocationId = table.Column<int>(nullable: true),
+                    TimeOfDeparture = table.Column<string>(nullable: true),
+                    TimeOfArrival = table.Column<string>(nullable: true),
+                    Line = table.Column<string>(nullable: true),
+                    Distance = table.Column<string>(nullable: true),
+                    Price = table.Column<decimal>(nullable: false),
+                    Duration = table.Column<decimal>(nullable: false),
+                    Company = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Transports", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Transports_Location_FromLocationId",
+                        column: x => x.FromLocationId,
+                        principalTable: "Location",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Transports_Location_ToLocationId",
+                        column: x => x.ToLocationId,
+                        principalTable: "Location",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Apartments_LocationId",
                 table: "Apartments",
                 column: "LocationId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Transports_FromLocationId",
+                table: "Transports",
+                column: "FromLocationId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Transports_ToLocationId",
+                table: "Transports",
+                column: "ToLocationId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

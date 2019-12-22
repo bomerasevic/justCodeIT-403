@@ -18,22 +18,13 @@ namespace Hackathon.API
             //var host = new WebHostBuilder()
             //              .UseKestrel()
             //              .UseContentRoot(Directory.GetCurrentDirectory())
-            //              //.UseIISIntegration()
+            //              .UseIISIntegration()
             //              .UseStartup<Startup>()
-            //              //.ConfigureLogging(log =>
-            //              //{
-            //              //    log.ClearProviders();
-            //              //    log.SetMinimumLevel(LogLevel.Information);
-            //              //}).UseNLog()
             //              .Build();
             //host.Run();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args).UseStartup<Startup>();
-
-        //public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-        //    WebHost.CreateDefaultBuilder(args)
-        //        .UseStartup<Startup>();
     }
 }
